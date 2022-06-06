@@ -1,7 +1,7 @@
 // bài 1
 btnSmallNumber.onclick = function () {
     var sum = 0;
-    for (i = 1; sum < 10000; i++) {
+    for (var i = 1; sum < 10000; i++) {
         sum += i;
     }
     i -= 1;
@@ -17,7 +17,7 @@ btnCalTotal.onclick = function () {
 
 function calTotal(x, n) {
     var s = 0;
-    for (i = 1; i <= n; i++) {
+    for (var i = 1; i <= n; i++) {
         s += Math.pow(x, i);
     }
     return s;
@@ -30,7 +30,7 @@ btnCount.onclick = function () {
     if (inNumberN < 0 || !Number.isInteger(inNumberN)) {
         factorial = 0;
     }
-    for (i = 1; i <= inNumberN; i++) {
+    for (var i = 1; i <= inNumberN; i++) {
         factorial *= i;
     }
     if (inNumberN <= 20) {
@@ -43,7 +43,7 @@ btnCount.onclick = function () {
 // bài 4
 btnPrintDiv.onclick = function () {
     var printDiv = '';
-    for (i = 1; i <= 10; i++) {
+    for (var i = 1; i <= 10; i++) {
         if (i % 2 == 0) {
             printDiv += '<div style="background-color:red; color: #fff;">Div chẵn ' + i + '</div>';
         } else {
